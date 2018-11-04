@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96CF218C1F774B3300DD48BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF218B1F774B3300DD48BC /* AppDelegate.swift */; };
+		96CF218E1F774B3300DD48BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF218D1F774B3300DD48BC /* ViewController.swift */; };
+		96CF21911F774B3300DD48BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CF218F1F774B3300DD48BC /* Main.storyboard */; };
+		96CF21931F774B3300DD48BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96CF21921F774B3300DD48BC /* Assets.xcassets */; };
+		96CF21961F774B3300DD48BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CF21941F774B3300DD48BC /* LaunchScreen.storyboard */; };
+		96CF21A11F774B3300DD48BC /* DistilleryCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF21A01F774B3300DD48BC /* DistilleryCalculatorTests.swift */; };
+		96CF21AC1F774B3400DD48BC /* DistilleryCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF21AB1F774B3400DD48BC /* DistilleryCalculatorUITests.swift */; };
+		96E8F6581F7CD922004096E2 /* ProofingDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8F6571F7CD922004096E2 /* ProofingDown.swift */; };
+		96F9D48D1F8448CA002F9103 /* VolAtAdjustedProof.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F9D48C1F8448CA002F9103 /* VolAtAdjustedProof.swift */; };
+		96F9D48F1F845192002F9103 /* ProofGallons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F9D48E1F845192002F9103 /* ProofGallons.swift */; };
+		96F9D4911F847751002F9103 /* VolumeFromWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F9D4901F847751002F9103 /* VolumeFromWeight.swift */; };
+		96F9D4931F8478A2002F9103 /* PotentialAlcoholFromBrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F9D4921F8478A2002F9103 /* PotentialAlcoholFromBrix.swift */; };
+		96F9D4951F84822D002F9103 /* UnitConversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F9D4941F84822D002F9103 /* UnitConversions.swift */; };
+		96FBE76D20535898003421D5 /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FBE76C20535898003421D5 /* CustomNavController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96CF219D1F774B3300DD48BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96CF21801F774B3300DD48BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96CF21871F774B3300DD48BC;
+			remoteInfo = DistilleryCalculator;
+		};
+		96CF21A81F774B3400DD48BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96CF21801F774B3300DD48BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96CF21871F774B3300DD48BC;
+			remoteInfo = DistilleryCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		96CF21881F774B3300DD48BC /* DistilleryCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistilleryCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CF218B1F774B3300DD48BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96CF218D1F774B3300DD48BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		96CF21901F774B3300DD48BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96CF21921F774B3300DD48BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96CF21951F774B3300DD48BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96CF21971F774B3300DD48BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96CF219C1F774B3300DD48BC /* DistilleryCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DistilleryCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CF21A01F774B3300DD48BC /* DistilleryCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistilleryCalculatorTests.swift; sourceTree = "<group>"; };
+		96CF21A21F774B3300DD48BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96CF21A71F774B3400DD48BC /* DistilleryCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DistilleryCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CF21AB1F774B3400DD48BC /* DistilleryCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistilleryCalculatorUITests.swift; sourceTree = "<group>"; };
+		96CF21AD1F774B3400DD48BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E8F6571F7CD922004096E2 /* ProofingDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProofingDown.swift; sourceTree = "<group>"; };
+		96F9D48C1F8448CA002F9103 /* VolAtAdjustedProof.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VolAtAdjustedProof.swift; path = DistilleryCalculator/VolAtAdjustedProof.swift; sourceTree = "<group>"; };
+		96F9D48E1F845192002F9103 /* ProofGallons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProofGallons.swift; sourceTree = "<group>"; };
+		96F9D4901F847751002F9103 /* VolumeFromWeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeFromWeight.swift; sourceTree = "<group>"; };
+		96F9D4921F8478A2002F9103 /* PotentialAlcoholFromBrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PotentialAlcoholFromBrix.swift; sourceTree = "<group>"; };
+		96F9D4941F84822D002F9103 /* UnitConversions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitConversions.swift; sourceTree = "<group>"; };
+		96FBE76C20535898003421D5 /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96CF21851F774B3300DD48BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CF21991F774B3300DD48BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CF21A41F774B3400DD48BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96CF217F1F774B3300DD48BC = {
+			isa = PBXGroup;
+			children = (
+				96F9D48C1F8448CA002F9103 /* VolAtAdjustedProof.swift */,
+				96CF218A1F774B3300DD48BC /* DistilleryCalculator */,
+				96CF219F1F774B3300DD48BC /* DistilleryCalculatorTests */,
+				96CF21AA1F774B3400DD48BC /* DistilleryCalculatorUITests */,
+				96CF21891F774B3300DD48BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96CF21891F774B3300DD48BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96CF21881F774B3300DD48BC /* DistilleryCalculator.app */,
+				96CF219C1F774B3300DD48BC /* DistilleryCalculatorTests.xctest */,
+				96CF21A71F774B3400DD48BC /* DistilleryCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96CF218A1F774B3300DD48BC /* DistilleryCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				96CF218B1F774B3300DD48BC /* AppDelegate.swift */,
+				96CF218D1F774B3300DD48BC /* ViewController.swift */,
+				96CF218F1F774B3300DD48BC /* Main.storyboard */,
+				96F9D4941F84822D002F9103 /* UnitConversions.swift */,
+				96F9D4921F8478A2002F9103 /* PotentialAlcoholFromBrix.swift */,
+				96F9D4901F847751002F9103 /* VolumeFromWeight.swift */,
+				96F9D48E1F845192002F9103 /* ProofGallons.swift */,
+				96E8F6571F7CD922004096E2 /* ProofingDown.swift */,
+				96CF21921F774B3300DD48BC /* Assets.xcassets */,
+				96CF21941F774B3300DD48BC /* LaunchScreen.storyboard */,
+				96CF21971F774B3300DD48BC /* Info.plist */,
+				96FBE76C20535898003421D5 /* CustomNavController.swift */,
+			);
+			path = DistilleryCalculator;
+			sourceTree = "<group>";
+		};
+		96CF219F1F774B3300DD48BC /* DistilleryCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				96CF21A01F774B3300DD48BC /* DistilleryCalculatorTests.swift */,
+				96CF21A21F774B3300DD48BC /* Info.plist */,
+			);
+			path = DistilleryCalculatorTests;
+			sourceTree = "<group>";
+		};
+		96CF21AA1F774B3400DD48BC /* DistilleryCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				96CF21AB1F774B3400DD48BC /* DistilleryCalculatorUITests.swift */,
+				96CF21AD1F774B3400DD48BC /* Info.plist */,
+			);
+			path = DistilleryCalculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96CF21871F774B3300DD48BC /* DistilleryCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96CF21B01F774B3400DD48BC /* Build configuration list for PBXNativeTarget "DistilleryCalculator" */;
+			buildPhases = (
+				96CF21841F774B3300DD48BC /* Sources */,
+				96CF21851F774B3300DD48BC /* Frameworks */,
+				96CF21861F774B3300DD48BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DistilleryCalculator;
+			productName = DistilleryCalculator;
+			productReference = 96CF21881F774B3300DD48BC /* DistilleryCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96CF219B1F774B3300DD48BC /* DistilleryCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96CF21B31F774B3400DD48BC /* Build configuration list for PBXNativeTarget "DistilleryCalculatorTests" */;
+			buildPhases = (
+				96CF21981F774B3300DD48BC /* Sources */,
+				96CF21991F774B3300DD48BC /* Frameworks */,
+				96CF219A1F774B3300DD48BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96CF219E1F774B3300DD48BC /* PBXTargetDependency */,
+			);
+			name = DistilleryCalculatorTests;
+			productName = DistilleryCalculatorTests;
+			productReference = 96CF219C1F774B3300DD48BC /* DistilleryCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96CF21A61F774B3400DD48BC /* DistilleryCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96CF21B61F774B3400DD48BC /* Build configuration list for PBXNativeTarget "DistilleryCalculatorUITests" */;
+			buildPhases = (
+				96CF21A31F774B3400DD48BC /* Sources */,
+				96CF21A41F774B3400DD48BC /* Frameworks */,
+				96CF21A51F774B3400DD48BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96CF21A91F774B3400DD48BC /* PBXTargetDependency */,
+			);
+			name = DistilleryCalculatorUITests;
+			productName = DistilleryCalculatorUITests;
+			productReference = 96CF21A71F774B3400DD48BC /* DistilleryCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96CF21801F774B3300DD48BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "EMIL SANTOS";
+				TargetAttributes = {
+					96CF21871F774B3300DD48BC = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = HD2P3PYVVQ;
+						ProvisioningStyle = Automatic;
+					};
+					96CF219B1F774B3300DD48BC = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 96CF21871F774B3300DD48BC;
+					};
+					96CF21A61F774B3400DD48BC = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 96CF21871F774B3300DD48BC;
+					};
+				};
+			};
+			buildConfigurationList = 96CF21831F774B3300DD48BC /* Build configuration list for PBXProject "DistilleryCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96CF217F1F774B3300DD48BC;
+			productRefGroup = 96CF21891F774B3300DD48BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96CF21871F774B3300DD48BC /* DistilleryCalculator */,
+				96CF219B1F774B3300DD48BC /* DistilleryCalculatorTests */,
+				96CF21A61F774B3400DD48BC /* DistilleryCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96CF21861F774B3300DD48BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CF21961F774B3300DD48BC /* LaunchScreen.storyboard in Resources */,
+				96CF21931F774B3300DD48BC /* Assets.xcassets in Resources */,
+				96CF21911F774B3300DD48BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CF219A1F774B3300DD48BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CF21A51F774B3400DD48BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96CF21841F774B3300DD48BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F9D48F1F845192002F9103 /* ProofGallons.swift in Sources */,
+				96FBE76D20535898003421D5 /* CustomNavController.swift in Sources */,
+				96F9D4951F84822D002F9103 /* UnitConversions.swift in Sources */,
+				96CF218E1F774B3300DD48BC /* ViewController.swift in Sources */,
+				96E8F6581F7CD922004096E2 /* ProofingDown.swift in Sources */,
+				96CF218C1F774B3300DD48BC /* AppDelegate.swift in Sources */,
+				96F9D48D1F8448CA002F9103 /* VolAtAdjustedProof.swift in Sources */,
+				96F9D4911F847751002F9103 /* VolumeFromWeight.swift in Sources */,
+				96F9D4931F8478A2002F9103 /* PotentialAlcoholFromBrix.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CF21981F774B3300DD48BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CF21A11F774B3300DD48BC /* DistilleryCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CF21A31F774B3400DD48BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CF21AC1F774B3400DD48BC /* DistilleryCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96CF219E1F774B3300DD48BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96CF21871F774B3300DD48BC /* DistilleryCalculator */;
+			targetProxy = 96CF219D1F774B3300DD48BC /* PBXContainerItemProxy */;
+		};
+		96CF21A91F774B3400DD48BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96CF21871F774B3300DD48BC /* DistilleryCalculator */;
+			targetProxy = 96CF21A81F774B3400DD48BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96CF218F1F774B3300DD48BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96CF21901F774B3300DD48BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96CF21941F774B3300DD48BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96CF21951F774B3300DD48BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96CF21AE1F774B3400DD48BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96CF21AF1F774B3400DD48BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96CF21B11F774B3400DD48BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Bently Holdings California, A California Limited Partnership";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HD2P3PYVVQ;
+				INFOPLIST_FILE = DistilleryCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilsantos.DistilleryCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		96CF21B21F774B3400DD48BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Bently Holdings California, A California Limited Partnership";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HD2P3PYVVQ;
+				INFOPLIST_FILE = DistilleryCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilsantos.DistilleryCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		96CF21B41F774B3400DD48BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DistilleryCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilsantos.DistilleryCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DistilleryCalculator.app/DistilleryCalculator";
+			};
+			name = Debug;
+		};
+		96CF21B51F774B3400DD48BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DistilleryCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilsantos.DistilleryCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DistilleryCalculator.app/DistilleryCalculator";
+			};
+			name = Release;
+		};
+		96CF21B71F774B3400DD48BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DistilleryCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilsantos.DistilleryCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DistilleryCalculator;
+			};
+			name = Debug;
+		};
+		96CF21B81F774B3400DD48BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DistilleryCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilsantos.DistilleryCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DistilleryCalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96CF21831F774B3300DD48BC /* Build configuration list for PBXProject "DistilleryCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CF21AE1F774B3400DD48BC /* Debug */,
+				96CF21AF1F774B3400DD48BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96CF21B01F774B3400DD48BC /* Build configuration list for PBXNativeTarget "DistilleryCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CF21B11F774B3400DD48BC /* Debug */,
+				96CF21B21F774B3400DD48BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96CF21B31F774B3400DD48BC /* Build configuration list for PBXNativeTarget "DistilleryCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CF21B41F774B3400DD48BC /* Debug */,
+				96CF21B51F774B3400DD48BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96CF21B61F774B3400DD48BC /* Build configuration list for PBXNativeTarget "DistilleryCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CF21B71F774B3400DD48BC /* Debug */,
+				96CF21B81F774B3400DD48BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96CF21801F774B3300DD48BC /* Project object */;
+}
