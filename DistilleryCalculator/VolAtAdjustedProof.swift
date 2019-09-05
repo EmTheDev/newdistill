@@ -16,7 +16,7 @@ class VolAtAdjustedProof: UIViewController {
     @IBAction func CalculateButton(_ sender: Any) {
         if Proof.text! == "" {
             Total_Label.text = "Must fill all fields"
-            Total_Label.font = Total_Label.font.withSize(20)
+            Total_Label.font = Total_Label.font.withSize(30)
         }else{
             Total_Label.font = Total_Label.font.withSize(30)
             let total: Float = Float(Proof.text!)! / 2

@@ -14,7 +14,7 @@ class ProofGallons: UIViewController {
     @IBOutlet weak var ABV: UITextField!
     @IBOutlet weak var Total_Label: UILabel!
     
-    @IBAction func calculateButton(_ sender: Any) {
+    @IBAction func calculateButton2(_ sender: Any) {
         if TotalVolume.text! == "" || ABV.text! == "" {
             Total_Label.text = "Must fill all fields"
         }else{
@@ -39,7 +39,6 @@ class ProofGallons: UIViewController {
         super.didReceiveMemoryWarning()
         
     }
-    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)

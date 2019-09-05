@@ -20,11 +20,12 @@ class ProofingDown: UIViewController, UITextFieldDelegate {
         
         if Volume.text! == "" || currentABV.text! == "" || desireABV.text! == "" {
             Total_Label.text = "Must fill all fields"
-            Total_Label.font = Total_Label.font.withSize(20)
+            Total_Label.font = Total_Label.font.withSize(40)
         }else{
-            Total_Label.font = Total_Label.font.withSize(30)
-        let total: Float = Float(Volume.text!)! * ((Float(currentABV.text!)!/Float(desireABV.text!)!) - 1)
-        Total_Label.text = "\(total)" + " L"
+            Total_Label.font = Total_Label.font.withSize(40)
+        var total: Float = Float(Volume.text!)! * ((Float(currentABV.text!)!/Float(desireABV.text!)!) - 1)
+        total = Float(round(1000*total)/1000)
+            Total_Label.text = "\(total)" + " L"
             
             UserDefaults.standard.set(Total_Label.text, forKey: "totalLabelPD")
         }

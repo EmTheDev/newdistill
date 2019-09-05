@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2068E87423217A9700E1365C /* VolumeFromGeometriesOfTanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068E87323217A9700E1365C /* VolumeFromGeometriesOfTanks.swift */; };
+		209FA7F62315A39900979DDC /* DistilleryCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF21AB1F774B3400DD48BC /* DistilleryCalculatorUITests.swift */; };
 		96CF218C1F774B3300DD48BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF218B1F774B3300DD48BC /* AppDelegate.swift */; };
 		96CF218E1F774B3300DD48BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF218D1F774B3300DD48BC /* ViewController.swift */; };
 		96CF21911F774B3300DD48BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CF218F1F774B3300DD48BC /* Main.storyboard */; };
 		96CF21931F774B3300DD48BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96CF21921F774B3300DD48BC /* Assets.xcassets */; };
 		96CF21961F774B3300DD48BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CF21941F774B3300DD48BC /* LaunchScreen.storyboard */; };
 		96CF21A11F774B3300DD48BC /* DistilleryCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF21A01F774B3300DD48BC /* DistilleryCalculatorTests.swift */; };
-		96CF21AC1F774B3400DD48BC /* DistilleryCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF21AB1F774B3400DD48BC /* DistilleryCalculatorUITests.swift */; };
 		96E8F6581F7CD922004096E2 /* ProofingDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8F6571F7CD922004096E2 /* ProofingDown.swift */; };
 		96F9D48D1F8448CA002F9103 /* VolAtAdjustedProof.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F9D48C1F8448CA002F9103 /* VolAtAdjustedProof.swift */; };
 		96F9D48F1F845192002F9103 /* ProofGallons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F9D48E1F845192002F9103 /* ProofGallons.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2068E87323217A9700E1365C /* VolumeFromGeometriesOfTanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeFromGeometriesOfTanks.swift; sourceTree = "<group>"; };
 		96CF21881F774B3300DD48BC /* DistilleryCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistilleryCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CF218B1F774B3300DD48BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96CF218D1F774B3300DD48BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				96CF21941F774B3300DD48BC /* LaunchScreen.storyboard */,
 				96CF21971F774B3300DD48BC /* Info.plist */,
 				96FBE76C20535898003421D5 /* CustomNavController.swift */,
+				2068E87323217A9700E1365C /* VolumeFromGeometriesOfTanks.swift */,
 			);
 			path = DistilleryCalculator;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 		96CF219F1F774B3300DD48BC /* DistilleryCalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				96CF21AB1F774B3400DD48BC /* DistilleryCalculatorUITests.swift */,
 				96CF21A01F774B3300DD48BC /* DistilleryCalculatorTests.swift */,
 				96CF21A21F774B3300DD48BC /* Info.plist */,
 			);
@@ -140,7 +144,6 @@
 		96CF21AA1F774B3400DD48BC /* DistilleryCalculatorUITests */ = {
 			isa = PBXGroup;
 			children = (
-				96CF21AB1F774B3400DD48BC /* DistilleryCalculatorUITests.swift */,
 				96CF21AD1F774B3400DD48BC /* Info.plist */,
 			);
 			path = DistilleryCalculatorUITests;
@@ -214,7 +217,7 @@
 				TargetAttributes = {
 					96CF21871F774B3300DD48BC = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = HD2P3PYVVQ;
+						DevelopmentTeam = DUR37J42K6;
 						ProvisioningStyle = Automatic;
 					};
 					96CF219B1F774B3300DD48BC = {
@@ -234,6 +237,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -281,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2068E87423217A9700E1365C /* VolumeFromGeometriesOfTanks.swift in Sources */,
 				96F9D48F1F845192002F9103 /* ProofGallons.swift in Sources */,
 				96FBE76D20535898003421D5 /* CustomNavController.swift in Sources */,
 				96F9D4951F84822D002F9103 /* UnitConversions.swift in Sources */,
@@ -297,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209FA7F62315A39900979DDC /* DistilleryCalculatorUITests.swift in Sources */,
 				96CF21A11F774B3300DD48BC /* DistilleryCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,7 +311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96CF21AC1F774B3400DD48BC /* DistilleryCalculatorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,14 +463,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Bently Holdings California, A California Limited Partnership";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HD2P3PYVVQ;
+				DEVELOPMENT_TEAM = DUR37J42K6;
 				INFOPLIST_FILE = DistilleryCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emilsantos.DistilleryCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -476,14 +482,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Bently Holdings California, A California Limited Partnership";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HD2P3PYVVQ;
+				DEVELOPMENT_TEAM = DUR37J42K6;
 				INFOPLIST_FILE = DistilleryCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emilsantos.DistilleryCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
