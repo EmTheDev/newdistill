@@ -5,7 +5,7 @@
 //  Created by EMIL SANTOS on 9/28/17.
 //  Copyright © 2017 EMIL SANTOS. All rights reserved.
 //
-
+import Foundation
 import UIKit
 
 class ProofingDown: UIViewController, UITextFieldDelegate {
@@ -18,15 +18,18 @@ class ProofingDown: UIViewController, UITextFieldDelegate {
     
     @IBAction func calculateButton(_ sender: Any) {
         
-        if Volume.text! == "" || currentABV.text! == "" || desireABV.text! == "" {
-            Total_Label.text = "Must fill all fields"
-            Total_Label.font = Total_Label.font.withSize(40)
+
+        
+        if !(Volume.text!.isnumberordouble && currentABV.text!.isnumberordouble && desireABV.text!.isnumberordouble){
+            Total_Label.textColor = UIColor.red
+            Total_Label.font = Total_Label.font.withSize(20)
+            Total_Label.text = "Must enter valid numbers"
         }else{
             Total_Label.font = Total_Label.font.withSize(40)
-        var total: Float = Float(Volume.text!)! * ((Float(currentABV.text!)!/Float(desireABV.text!)!) - 1)
-        total = Float(round(1000*total)/1000)
+            Total_Label.textColor = UIColor.white
+            var total: Float = Float(Volume.text!)! * ((Float(currentABV.text!)!/Float(desireABV.text!)!) - 1)
+            total = Float(round(1000*total)/1000)
             Total_Label.text = "\(total)" + " L"
-            
             UserDefaults.standard.set(Total_Label.text, forKey: "totalLabelPD")
         }
     }
@@ -72,4 +75,9 @@ class ProofingDown: UIViewController, UITextFieldDelegate {
             Total_Label.text = x
         }
     }
+    
+}
+
+extension String  {
+    var isnumberordouble: Bool { return Double(self) != nil }
 }

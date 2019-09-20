@@ -5,7 +5,7 @@
 //  Created by EMIL SANTOS on 10/3/17.
 //  Copyright © 2017 EMIL SANTOS. All rights reserved.
 //
-
+import Foundation
 import UIKit
 
 class VolAtAdjustedProof: UIViewController {
@@ -14,19 +14,19 @@ class VolAtAdjustedProof: UIViewController {
     @IBOutlet weak var Proof: UITextField!
     
     @IBAction func CalculateButton(_ sender: Any) {
-        if Proof.text! == "" {
-            Total_Label.text = "Must fill all fields"
-            Total_Label.font = Total_Label.font.withSize(30)
+        if !(Proof.text!.isnumberordouble){
+            Total_Label.text = "Please enter a valid number"
+            Total_Label.font = Total_Label.font.withSize(20)
+            Total_Label.textColor = UIColor.red
         }else{
-            Total_Label.font = Total_Label.font.withSize(30)
+            Total_Label.font = Total_Label.font.withSize(40)
+            Total_Label.textColor = UIColor.white
             let total: Float = Float(Proof.text!)! / 2
             Total_Label.text = "%" + "\(total)"
-            UserDefaults.standard.set(Total_Label.text, forKey: "totalLabelVAP")        }
+            UserDefaults.standard.set(Total_Label.text, forKey: "totalLabelVAP")
+        }
     }
     
-
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,3 +53,4 @@ class VolAtAdjustedProof: UIViewController {
         }
     }
 }
+

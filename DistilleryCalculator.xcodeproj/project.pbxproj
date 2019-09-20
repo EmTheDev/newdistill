@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2068E87423217A9700E1365C /* VolumeFromGeometriesOfTanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068E87323217A9700E1365C /* VolumeFromGeometriesOfTanks.swift */; };
+		20760F672321844600744E07 /* VolFromGeometriesOfTanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20760F662321844600744E07 /* VolFromGeometriesOfTanks.swift */; };
 		209FA7F62315A39900979DDC /* DistilleryCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF21AB1F774B3400DD48BC /* DistilleryCalculatorUITests.swift */; };
+		20D8576C2332C28A00E88CC2 /* AlcoholCorrectionTempHydrometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D8576B2332C28A00E88CC2 /* AlcoholCorrectionTempHydrometer.swift */; };
 		96CF218C1F774B3300DD48BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF218B1F774B3300DD48BC /* AppDelegate.swift */; };
 		96CF218E1F774B3300DD48BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF218D1F774B3300DD48BC /* ViewController.swift */; };
 		96CF21911F774B3300DD48BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CF218F1F774B3300DD48BC /* Main.storyboard */; };
@@ -42,7 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2068E87323217A9700E1365C /* VolumeFromGeometriesOfTanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeFromGeometriesOfTanks.swift; sourceTree = "<group>"; };
+		20760F662321844600744E07 /* VolFromGeometriesOfTanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolFromGeometriesOfTanks.swift; sourceTree = "<group>"; };
+		20D8576B2332C28A00E88CC2 /* AlcoholCorrectionTempHydrometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholCorrectionTempHydrometer.swift; sourceTree = "<group>"; };
 		96CF21881F774B3300DD48BC /* DistilleryCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistilleryCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CF218B1F774B3300DD48BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96CF218D1F774B3300DD48BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,7 +128,8 @@
 				96CF21941F774B3300DD48BC /* LaunchScreen.storyboard */,
 				96CF21971F774B3300DD48BC /* Info.plist */,
 				96FBE76C20535898003421D5 /* CustomNavController.swift */,
-				2068E87323217A9700E1365C /* VolumeFromGeometriesOfTanks.swift */,
+				20760F662321844600744E07 /* VolFromGeometriesOfTanks.swift */,
+				20D8576B2332C28A00E88CC2 /* AlcoholCorrectionTempHydrometer.swift */,
 			);
 			path = DistilleryCalculator;
 			sourceTree = "<group>";
@@ -234,10 +237,9 @@
 			};
 			buildConfigurationList = 96CF21831F774B3300DD48BC /* Build configuration list for PBXProject "DistilleryCalculator" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -285,13 +287,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2068E87423217A9700E1365C /* VolumeFromGeometriesOfTanks.swift in Sources */,
 				96F9D48F1F845192002F9103 /* ProofGallons.swift in Sources */,
 				96FBE76D20535898003421D5 /* CustomNavController.swift in Sources */,
+				20760F672321844600744E07 /* VolFromGeometriesOfTanks.swift in Sources */,
 				96F9D4951F84822D002F9103 /* UnitConversions.swift in Sources */,
 				96CF218E1F774B3300DD48BC /* ViewController.swift in Sources */,
 				96E8F6581F7CD922004096E2 /* ProofingDown.swift in Sources */,
 				96CF218C1F774B3300DD48BC /* AppDelegate.swift in Sources */,
+				20D8576C2332C28A00E88CC2 /* AlcoholCorrectionTempHydrometer.swift in Sources */,
 				96F9D48D1F8448CA002F9103 /* VolAtAdjustedProof.swift in Sources */,
 				96F9D4911F847751002F9103 /* VolumeFromWeight.swift in Sources */,
 				96F9D4931F8478A2002F9103 /* PotentialAlcoholFromBrix.swift in Sources */,
@@ -402,7 +405,8 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -451,7 +455,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
