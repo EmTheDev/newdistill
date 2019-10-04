@@ -10,8 +10,8 @@ import UIKit
 
 class UnitConversions: UIViewController {
     
-    @IBOutlet weak var Celsius: UITextField!
-    @IBOutlet weak var Fahrenheit: UITextField!
+
+    @IBOutlet weak var unitType: UIPickerView!
 
     
     override func viewDidLoad() {
@@ -25,5 +25,4 @@ class UnitConversions: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
 }

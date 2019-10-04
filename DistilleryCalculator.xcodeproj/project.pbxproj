@@ -45,7 +45,7 @@
 /* Begin PBXFileReference section */
 		20760F662321844600744E07 /* VolFromGeometriesOfTanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolFromGeometriesOfTanks.swift; sourceTree = "<group>"; };
 		20D8576B2332C28A00E88CC2 /* AlcoholCorrectionTempHydrometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholCorrectionTempHydrometer.swift; sourceTree = "<group>"; };
-		96CF21881F774B3300DD48BC /* DistilleryCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistilleryCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CF21881F774B3300DD48BC /* Distillery Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Distillery Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CF218B1F774B3300DD48BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96CF218D1F774B3300DD48BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96CF21901F774B3300DD48BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		96CF21891F774B3300DD48BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96CF21881F774B3300DD48BC /* DistilleryCalculator.app */,
+				96CF21881F774B3300DD48BC /* Distillery Calculator.app */,
 				96CF219C1F774B3300DD48BC /* DistilleryCalculatorTests.xctest */,
 				96CF21A71F774B3400DD48BC /* DistilleryCalculatorUITests.xctest */,
 			);
@@ -169,7 +169,7 @@
 			);
 			name = DistilleryCalculator;
 			productName = DistilleryCalculator;
-			productReference = 96CF21881F774B3300DD48BC /* DistilleryCalculator.app */;
+			productReference = 96CF21881F774B3300DD48BC /* Distillery Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 		96CF219B1F774B3300DD48BC /* DistilleryCalculatorTests */ = {
@@ -405,7 +405,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -455,7 +455,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -471,12 +471,12 @@
 				DEVELOPMENT_TEAM = DUR37J42K6;
 				INFOPLIST_FILE = DistilleryCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.emilsantos.DistilleryCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emsadeveloper.distillerycalculator;
+				PRODUCT_NAME = "Distillery Calculator";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -490,12 +490,12 @@
 				DEVELOPMENT_TEAM = DUR37J42K6;
 				INFOPLIST_FILE = DistilleryCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.emilsantos.DistilleryCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emsadeveloper.distillerycalculator;
+				PRODUCT_NAME = "Distillery Calculator";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -508,7 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emilsantos.DistilleryCalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DistilleryCalculator.app/DistilleryCalculator";
 			};
 			name = Debug;
@@ -522,7 +522,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emilsantos.DistilleryCalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DistilleryCalculator.app/DistilleryCalculator";
 			};
 			name = Release;
@@ -535,7 +535,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emilsantos.DistilleryCalculatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = DistilleryCalculator;
 			};
 			name = Debug;
@@ -548,7 +548,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emilsantos.DistilleryCalculatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = DistilleryCalculator;
 			};
 			name = Release;

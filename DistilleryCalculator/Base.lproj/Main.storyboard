@@ -10,7 +10,7 @@
         <!--Custom Nav Controller-->
         <scene sceneID="Qks-pp-P24">
             <objects>
-                <navigationController id="h7h-0i-rkK" customClass="CustomNavController" customModule="DistilleryCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="h7h-0i-rkK" customClass="CustomNavController" customModule="Distillery_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="44j-Tz-TNm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -26,7 +26,7 @@
         <!--potential alcohol from brix-->
         <scene sceneID="rXt-2B-4Bn">
             <objects>
-                <viewController title="potential alcohol from brix" id="Daw-yj-rnz" customClass="PotentialAlcoholFromBrix" customModule="DistilleryCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="potential alcohol from brix" id="Daw-yj-rnz" customClass="PotentialAlcoholFromBrix" customModule="Distillery_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B7Z-st-MWY"/>
                         <viewControllerLayoutGuide type="bottom" id="YUG-3Q-JZ0"/>
@@ -87,7 +87,7 @@
         <!--alcohol correction for temp on hydrometer-->
         <scene sceneID="2lh-w7-Bgc">
             <objects>
-                <viewController title="alcohol correction for temp on hydrometer" id="jti-t3-Wy9" customClass="AlcoholCorrectionTempHydrometer" customModule="DistilleryCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="alcohol correction for temp on hydrometer" id="jti-t3-Wy9" customClass="AlcoholCorrectionTempHydrometer" customModule="Distillery_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aLa-T3-uGc"/>
                         <viewControllerLayoutGuide type="bottom" id="wDm-TA-0PV"/>
@@ -97,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calcBack" translatesAutoresizingMaskIntoConstraints="NO" id="gR5-b1-75Q">
-                                <rect key="frame" x="0.0" y="0.0" width="412.00000000000011" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="412" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QN-O0-qrK">
                                 <rect key="frame" x="31" y="544" width="350" height="50"/>
@@ -200,7 +200,7 @@
         <!--Unit Conversions-->
         <scene sceneID="K7y-ZG-8n2">
             <objects>
-                <viewController title="Unit Conversions" id="gfd-gm-IAU" customClass="UnitConversions" customModule="DistilleryCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Unit Conversions" id="gfd-gm-IAU" customClass="UnitConversions" customModule="Distillery_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AGk-SP-ZaT"/>
                         <viewControllerLayoutGuide type="bottom" id="1hy-5d-Loi"/>
@@ -209,23 +209,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Calc Coming Soon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Js4-0e-WoF">
-                                <rect key="frame" x="113" y="209" width="188" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calcBack" translatesAutoresizingMaskIntoConstraints="NO" id="hbx-EO-kNP">
+                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000011" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0Q-ac-YOZ" colorLabel="IBBuiltInLabel-Yellow">
+                                <rect key="frame" x="90" y="96" width="234" height="99"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <nil key="backgroundColor"/>
+                                </variation>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ukT-Es-Jv0">
+                                <rect key="frame" x="7" y="161" width="210" height="352"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Js4-0e-WoF" firstAttribute="centerX" secondItem="yAC-9i-GCp" secondAttribute="centerX" id="DAK-hQ-4Uj"/>
-                            <constraint firstItem="Js4-0e-WoF" firstAttribute="top" secondItem="AGk-SP-ZaT" secondAttribute="bottom" constant="121" id="s5H-ed-wBz"/>
-                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="unitType" destination="t0Q-ac-YOZ" id="b3v-Es-hbA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oeQ-Tn-N22" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152.8" y="366.56671664167919"/>
+            <point key="canvasLocation" x="1150.7246376811595" y="366.29464285714283"/>
         </scene>
         <!--Home-->
         <scene sceneID="gb8-yO-aQC">
@@ -410,7 +420,7 @@
                             <constraint firstItem="ZSy-3e-HTb" firstAttribute="leading" secondItem="E6g-Jw-aD5" secondAttribute="leading" id="wBl-fz-A3O"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" largeTitleDisplayMode="never" id="3bS-oh-an2"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="3bS-oh-an2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="unZ-9l-2fw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -419,7 +429,7 @@
         <!--vol from weight-->
         <scene sceneID="p7U-Mb-bKx">
             <objects>
-                <viewController title="vol from weight" id="9tO-Rw-qmj" customClass="VolumeFromWeight" customModule="DistilleryCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="vol from weight" id="9tO-Rw-qmj" customClass="VolumeFromWeight" customModule="Distillery_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DsG-BV-Pod"/>
                         <viewControllerLayoutGuide type="bottom" id="rYR-0x-iZK"/>
@@ -462,7 +472,7 @@
         <!--volume from geometries of tanks-->
         <scene sceneID="pC9-bN-fOq">
             <objects>
-                <viewController title="volume from geometries of tanks" id="lPj-JI-ALQ" customClass="VolFromGeometriesOfTanks" customModule="DistilleryCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="volume from geometries of tanks" id="lPj-JI-ALQ" customClass="VolFromGeometriesOfTanks" customModule="Distillery_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cgw-eW-vOv"/>
                         <viewControllerLayoutGuide type="bottom" id="glE-3F-qSZ"/>
@@ -472,7 +482,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calcBack" translatesAutoresizingMaskIntoConstraints="NO" id="NiJ-hA-EA7">
-                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000011" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Width (ft) :" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqJ-zU-lHr">
                                 <rect key="frame" x="86" y="204" width="271" height="40"/>
@@ -597,7 +607,7 @@
         <!--Proofing Down-->
         <scene sceneID="uvL-1f-ABY">
             <objects>
-                <viewController title="Proofing Down" id="ElG-p0-hm0" customClass="ProofingDown" customModule="DistilleryCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Proofing Down" id="ElG-p0-hm0" customClass="ProofingDown" customModule="Distillery_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zws-VM-dDl"/>
                         <viewControllerLayoutGuide type="bottom" id="Edw-ah-wSS"/>
@@ -745,7 +755,7 @@
         <!--Vol at adjusted proof-->
         <scene sceneID="J02-h2-I6F">
             <objects>
-                <viewController title="Vol at adjusted proof" id="sgd-HI-DGB" customClass="VolAtAdjustedProof" customModule="DistilleryCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Vol at adjusted proof" id="sgd-HI-DGB" customClass="VolAtAdjustedProof" customModule="Distillery_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mZg-7p-2z1"/>
                         <viewControllerLayoutGuide type="bottom" id="UQB-tP-d1Y"/>
@@ -755,7 +765,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calcBack" translatesAutoresizingMaskIntoConstraints="NO" id="ifq-om-AvZ">
-                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000011" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Alcohol By Volume (ABV) :" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Uzg-PU-juu">
                                 <rect key="frame" x="63" y="366" width="311" height="33"/>
@@ -838,7 +848,7 @@
         <!--proof gallons from vol and %ABV-->
         <scene sceneID="A9w-gJ-eu2">
             <objects>
-                <viewController title="proof gallons from vol and %ABV" id="s8V-Z3-xOD" customClass="ProofGallons" customModule="DistilleryCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="proof gallons from vol and %ABV" id="s8V-Z3-xOD" customClass="ProofGallons" customModule="Distillery_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="n5l-Dl-i5Z"/>
                         <viewControllerLayoutGuide type="bottom" id="wLo-cY-opf"/>
@@ -848,7 +858,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calcBack" translatesAutoresizingMaskIntoConstraints="NO" id="PO8-S2-I0A">
-                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000011" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vSB-GT-bC7">
                                 <rect key="frame" x="87" y="205" width="240" height="30"/>
