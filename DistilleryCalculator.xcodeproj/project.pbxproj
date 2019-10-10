@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2057CC00234CECFD002FDF71 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2057CBFF234CECFD002FDF71 /* Weight.swift */; };
 		20760F672321844600744E07 /* VolFromGeometriesOfTanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20760F662321844600744E07 /* VolFromGeometriesOfTanks.swift */; };
 		209FA7F62315A39900979DDC /* DistilleryCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF21AB1F774B3400DD48BC /* DistilleryCalculatorUITests.swift */; };
 		20D8576C2332C28A00E88CC2 /* AlcoholCorrectionTempHydrometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D8576B2332C28A00E88CC2 /* AlcoholCorrectionTempHydrometer.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2057CBFF234CECFD002FDF71 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
 		20760F662321844600744E07 /* VolFromGeometriesOfTanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolFromGeometriesOfTanks.swift; sourceTree = "<group>"; };
 		20D8576B2332C28A00E88CC2 /* AlcoholCorrectionTempHydrometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholCorrectionTempHydrometer.swift; sourceTree = "<group>"; };
 		96CF21881F774B3300DD48BC /* Distillery Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Distillery Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +125,7 @@
 				96F9D4921F8478A2002F9103 /* PotentialAlcoholFromBrix.swift */,
 				96F9D4901F847751002F9103 /* VolumeFromWeight.swift */,
 				96F9D48E1F845192002F9103 /* ProofGallons.swift */,
+				2057CBFF234CECFD002FDF71 /* Weight.swift */,
 				96E8F6571F7CD922004096E2 /* ProofingDown.swift */,
 				96CF21921F774B3300DD48BC /* Assets.xcassets */,
 				96CF21941F774B3300DD48BC /* LaunchScreen.storyboard */,
@@ -298,6 +301,7 @@
 				96F9D48D1F8448CA002F9103 /* VolAtAdjustedProof.swift in Sources */,
 				96F9D4911F847751002F9103 /* VolumeFromWeight.swift in Sources */,
 				96F9D4931F8478A2002F9103 /* PotentialAlcoholFromBrix.swift in Sources */,
+				2057CC00234CECFD002FDF71 /* Weight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,12 +33,10 @@ class VolAtAdjustedProof: UIViewController {
         Proof.keyboardType = UIKeyboardType.decimalPad
         Proof.inputAccessoryView = UIToolbar()
         Proof.placeholder = "0"
-
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
     }
     
     

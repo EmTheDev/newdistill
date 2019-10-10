@@ -75,7 +75,6 @@ class ProofingDown: UIViewController, UITextFieldDelegate {
             Total_Label.text = x
         }
     }
-    
 }
 
 extension String  {
