@@ -41,6 +41,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calcBack" translatesAutoresizingMaskIntoConstraints="NO" id="quE-LD-gXn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ9-QT-3gz">
+                                <rect key="frame" x="30" y="542" width="352" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.3554702065" green="0.61995587009999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Calculate" image="calcButt">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="CalculateButton:" destination="sgd-HI-DGB" eventType="touchUpInside" id="3XO-xc-xXA"/>
+                                    <action selector="calculateButton:" destination="ElG-p0-hm0" eventType="touchUpInside" id="xis-9B-fGz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -72,6 +88,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calcBack" translatesAutoresizingMaskIntoConstraints="NO" id="jBL-Fx-IzB">
+                                <rect key="frame" x="1" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WX0-PV-zjK">
+                                <rect key="frame" x="31" y="542" width="352" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.3554702065" green="0.61995587009999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Calculate" image="calcButt">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="CalculateButton:" destination="sgd-HI-DGB" eventType="touchUpInside" id="CZR-nv-AYU"/>
+                                    <action selector="calculateButton:" destination="ElG-p0-hm0" eventType="touchUpInside" id="raQ-No-UTn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -365,7 +397,7 @@
         <!--Temperature-->
         <scene sceneID="yDM-Tu-c6A">
             <objects>
-                <viewController title="Temperature" id="h4X-eG-3oK" sceneMemberID="viewController">
+                <viewController title="Temperature" id="h4X-eG-3oK" customClass="Temperature" customModule="Distillery_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2fP-HS-One"/>
                         <viewControllerLayoutGuide type="bottom" id="BOp-hE-MVN"/>
@@ -384,6 +416,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="textFieldEditingChanged:" destination="h4X-eG-3oK" eventType="editingChanged" id="bCc-7a-H0J"/>
                                     <action selector="textFieldEditingChanged:" destination="Bsd-BI-zHq" eventType="editingChanged" id="pQx-3f-i5m"/>
                                 </connections>
                             </textField>
@@ -398,6 +431,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Temperature" id="A3a-Ol-EB0"/>
+                    <connections>
+                        <outlet property="conversionLabel" destination="a0t-dO-z3G" id="W1n-xF-6Rk"/>
+                        <outlet property="tempPicker" destination="Tcs-fW-etU" id="Cz6-uM-lVg"/>
+                        <outlet property="userInputValue" destination="uIs-kZ-zuG" id="j3t-s0-cb9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wDj-oM-Tp2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -604,8 +642,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calcBack" translatesAutoresizingMaskIntoConstraints="NO" id="WnA-Sr-G4m">
-                                <rect key="frame" x="0.0" y="0.0" width="569.00000000000011" height="896"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="calcBack" translatesAutoresizingMaskIntoConstraints="NO" id="WnA-Sr-G4m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d6-xF-ztC">
                                 <rect key="frame" x="31" y="529" width="352" height="50"/>
@@ -633,7 +671,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfc-Ia-0Kr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="518" y="-295"/>
+            <point key="canvasLocation" x="517.39130434782612" y="-295.3125"/>
         </scene>
         <!--volume from geometries of tanks-->
         <scene sceneID="pC9-bN-fOq">
