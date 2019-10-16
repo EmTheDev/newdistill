@@ -35,12 +35,12 @@ class Weight: UIViewController {
     
     @IBAction func textFieldEditingChanged(_ sender: Any) {
         let unit = dataSource[weightPicker.selectedRow(inComponent: 0)]
-         let unit2 = dataSource2[weightPicker.selectedRow(inComponent: 1)]
+        let unit2 = dataSource2[weightPicker.selectedRow(inComponent: 1)]
                          conversionLabel.font = conversionLabel.font.withSize(30)
         conversionLabel.textColor = UIColor.black
         var answer: Float = 0.0
         
-            if(userInputValue.text!.isnumberordouble){
+         if(userInputValue.text!.isnumberordouble){
          switch unit{
          case "Metric ton":
              switch unit2{

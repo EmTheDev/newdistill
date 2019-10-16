@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201BBB7B235793B600F09F93 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BBB7A235793B600F09F93 /* Temperature.swift */; };
 		2057CC00234CECFD002FDF71 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2057CBFF234CECFD002FDF71 /* Weight.swift */; };
 		20760F672321844600744E07 /* VolFromGeometriesOfTanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20760F662321844600744E07 /* VolFromGeometriesOfTanks.swift */; };
 		209FA7F62315A39900979DDC /* DistilleryCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF21AB1F774B3400DD48BC /* DistilleryCalculatorUITests.swift */; };
+		20C5E6462355125100FA6BB5 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5E6452355125100FA6BB5 /* Volume.swift */; };
 		20D8576C2332C28A00E88CC2 /* AlcoholCorrectionTempHydrometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D8576B2332C28A00E88CC2 /* AlcoholCorrectionTempHydrometer.swift */; };
+		20DF8EB6234F993700CC4722 /* Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DF8EB5234F993700CC4722 /* Length.swift */; };
 		96CF218C1F774B3300DD48BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF218B1F774B3300DD48BC /* AppDelegate.swift */; };
 		96CF218E1F774B3300DD48BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF218D1F774B3300DD48BC /* ViewController.swift */; };
 		96CF21911F774B3300DD48BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CF218F1F774B3300DD48BC /* Main.storyboard */; };
@@ -44,9 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		201BBB7A235793B600F09F93 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		2057CBFF234CECFD002FDF71 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
 		20760F662321844600744E07 /* VolFromGeometriesOfTanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolFromGeometriesOfTanks.swift; sourceTree = "<group>"; };
+		20C5E6452355125100FA6BB5 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
 		20D8576B2332C28A00E88CC2 /* AlcoholCorrectionTempHydrometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholCorrectionTempHydrometer.swift; sourceTree = "<group>"; };
+		20DF8EB5234F993700CC4722 /* Length.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Length.swift; sourceTree = "<group>"; };
 		96CF21881F774B3300DD48BC /* Distillery Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Distillery Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CF218B1F774B3300DD48BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96CF218D1F774B3300DD48BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +139,9 @@
 				96FBE76C20535898003421D5 /* CustomNavController.swift */,
 				20760F662321844600744E07 /* VolFromGeometriesOfTanks.swift */,
 				20D8576B2332C28A00E88CC2 /* AlcoholCorrectionTempHydrometer.swift */,
+				20DF8EB5234F993700CC4722 /* Length.swift */,
+				20C5E6452355125100FA6BB5 /* Volume.swift */,
+				201BBB7A235793B600F09F93 /* Temperature.swift */,
 			);
 			path = DistilleryCalculator;
 			sourceTree = "<group>";
@@ -295,7 +304,10 @@
 				20760F672321844600744E07 /* VolFromGeometriesOfTanks.swift in Sources */,
 				96F9D4951F84822D002F9103 /* UnitConversions.swift in Sources */,
 				96CF218E1F774B3300DD48BC /* ViewController.swift in Sources */,
+				20C5E6462355125100FA6BB5 /* Volume.swift in Sources */,
+				20DF8EB6234F993700CC4722 /* Length.swift in Sources */,
 				96E8F6581F7CD922004096E2 /* ProofingDown.swift in Sources */,
+				201BBB7B235793B600F09F93 /* Temperature.swift in Sources */,
 				96CF218C1F774B3300DD48BC /* AppDelegate.swift in Sources */,
 				20D8576C2332C28A00E88CC2 /* AlcoholCorrectionTempHydrometer.swift in Sources */,
 				96F9D48D1F8448CA002F9103 /* VolAtAdjustedProof.swift in Sources */,

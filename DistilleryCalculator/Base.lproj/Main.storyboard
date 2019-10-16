@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h7h-0i-rkK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h7h-0i-rkK">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -219,7 +219,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <state key="normal" title="Weight">
                                     <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
-                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="huO-Mp-TQ9" kind="show" id="VcK-qd-pqf"/>
@@ -231,7 +231,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <state key="normal" title="Length">
                                     <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
-                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="w1L-1Z-5pp" kind="show" id="UnS-bK-qTu"/>
@@ -243,10 +243,10 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <state key="normal" title="Volume">
                                     <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
-                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Bsd-BI-zHq" kind="show" id="kcr-aL-YUI"/>
+                                    <segue destination="Bsd-BI-zHq" kind="show" id="hqk-go-hbi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1M9-35-pCF">
@@ -255,7 +255,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <state key="normal" title="Temperature">
                                     <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
-                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="h4X-eG-3oK" kind="show" id="UOB-K6-qY7"/>
@@ -267,12 +267,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oeQ-Tn-N22" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150.7246376811595" y="366.29464285714283"/>
+            <point key="canvasLocation" x="1194" y="367"/>
         </scene>
         <!--Length-->
         <scene sceneID="QQC-eR-sdD">
             <objects>
-                <viewController title="Length" id="w1L-1Z-5pp" sceneMemberID="viewController">
+                <viewController title="Length" id="w1L-1Z-5pp" customClass="Length" customModule="Distillery_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a3J-Sc-SN5"/>
                         <viewControllerLayoutGuide type="bottom" id="24b-nJ-Ea8"/>
@@ -280,9 +280,37 @@
                     <view key="view" contentMode="scaleToFill" id="jA4-GR-lj4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6yP-Zn-22r">
+                                <rect key="frame" x="0.0" y="121" width="414" height="309"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A5Q-Kl-I4B">
+                                <rect key="frame" x="20" y="438" width="193" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldEditingChanged:" destination="w1L-1Z-5pp" eventType="editingChanged" id="CSG-3N-Rmc"/>
+                                    <action selector="textFieldEditingChanged:" destination="huO-Mp-TQ9" eventType="editingChanged" id="QeH-XJ-Jfc"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZC-Gj-6ZH">
+                                <rect key="frame" x="221" y="438" width="173" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Length" id="gGu-eT-KwP"/>
+                    <connections>
+                        <outlet property="conversionLabel" destination="hZC-Gj-6ZH" id="tdI-rl-t5w"/>
+                        <outlet property="lengthPicker" destination="6yP-Zn-22r" id="M2A-DF-53M"/>
+                        <outlet property="userInputValue" destination="A5Q-Kl-I4B" id="lTv-2F-zfl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeQ-O2-WfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -291,17 +319,44 @@
         <!--Volume-->
         <scene sceneID="xgc-Mt-cP5">
             <objects>
-                <viewController title="Volume" id="Bsd-BI-zHq" sceneMemberID="viewController">
+                <viewController title="Volume" id="Bsd-BI-zHq" customClass="Volume" customModule="Distillery_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8MW-HA-B54"/>
                         <viewControllerLayoutGuide type="bottom" id="JWU-ie-jJS"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5kA-yQ-jlB">
+                    <view key="view" contentMode="scaleToFill" id="5kA-yQ-jlB" customClass="Volume">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="61a-t3-xIB">
+                                <rect key="frame" x="0.0" y="127" width="414" height="309"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fe2-mc-9ZW">
+                                <rect key="frame" x="20" y="444" width="193" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldEditingChanged:" destination="Bsd-BI-zHq" eventType="editingChanged" id="Ec5-lk-CYG"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPO-yP-h23">
+                                <rect key="frame" x="221" y="444" width="173" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Volume" id="nrM-mD-jQi"/>
+                    <connections>
+                        <outlet property="conversionLabel" destination="tPO-yP-h23" id="dkR-SM-lKf"/>
+                        <outlet property="userInputValue" destination="fe2-mc-9ZW" id="YX0-KT-1bx"/>
+                        <outlet property="volumePicker" destination="61a-t3-xIB" id="Chx-xc-XLT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o5v-Fh-iHd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -318,6 +373,28 @@
                     <view key="view" contentMode="scaleToFill" id="3WJ-ek-sL7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tcs-fW-etU">
+                                <rect key="frame" x="0.0" y="124" width="414" height="309"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uIs-kZ-zuG">
+                                <rect key="frame" x="20" y="441" width="193" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldEditingChanged:" destination="Bsd-BI-zHq" eventType="editingChanged" id="pQx-3f-i5m"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0t-dO-z3G">
+                                <rect key="frame" x="221" y="441" width="173" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Temperature" id="A3a-Ol-EB0"/>
