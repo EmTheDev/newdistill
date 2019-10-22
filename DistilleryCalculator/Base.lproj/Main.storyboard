@@ -266,7 +266,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414.00000000000011" height="896"/>
                             </imageView>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Y0-Oc-Ajx">
-                                <rect key="frame" x="148" y="118" width="119" height="38"/>
+                                <rect key="frame" x="147.66666666666666" y="118" width="118.99999999999997" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="119" id="1OA-N3-tnQ"/>
                                     <constraint firstAttribute="height" constant="38" id="vn3-8q-tNU"/>
