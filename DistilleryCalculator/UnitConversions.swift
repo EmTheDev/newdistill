@@ -12,7 +12,7 @@ class UnitConversions: UIViewController {
     
     private var dataSource = ["Weight", "Length", "Volume", "Temperature"]
     
-    @IBOutlet weak var unitType: UIPickerView!
+    //@IBOutlet weak var unitType: UIPickerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
