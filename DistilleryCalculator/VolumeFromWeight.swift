@@ -11,13 +11,13 @@ import UIKit
 class VolumeFromWeight: UIViewController {
 
     
-    @IBOutlet weak var Weight: UITextField!
+    //@IBOutlet weak var Weight: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Weight.keyboardType = UIKeyboardType.decimalPad
-        Weight.inputAccessoryView = UIToolbar()
-        Weight.placeholder = "0"
+        //Weight.keyboardType = UIKeyboardType.decimalPad
+        //Weight.inputAccessoryView = UIToolbar()
+        //Weight.placeholder = "0"
         // Do any additional setup after loading the view.
     }
 
