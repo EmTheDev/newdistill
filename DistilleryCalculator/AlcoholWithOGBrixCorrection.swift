@@ -55,12 +55,18 @@ class AlcoholWithOGBrixCorrection: UIViewController{
             ActualSG.text = String(sgTotal)
             ActualBrix.text = String(finalBrixTotal)
             
-            
-            
-            
-            
-            
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        OGBrix.keyboardType = UIKeyboardType.decimalPad
+        ApparentBrix.keyboardType = UIKeyboardType.decimalPad
+        Temp.keyboardType = UIKeyboardType.decimalPad
+
+        
+        // Do any additional setup after loading the view.
     }
 }
 

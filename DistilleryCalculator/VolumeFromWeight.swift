@@ -38,6 +38,7 @@ class VolumeFromWeight: UIViewController {
                 errorLabel.text = "Please enter values for each field"
                 
             }else{
+                errorLabel.text = ""
                 //calculate 4 and lower!
                 volBatch1.text = inputVolBatch1.text!
                 abvBatch1.text = inputABVBatch1.text!
@@ -56,6 +57,7 @@ class VolumeFromWeight: UIViewController {
                 errorLabel.text = "Please enter values for each field"
                 
             }else{
+                errorLabel.text = ""
                 //calculate 3 and lower!
                 volBatch1.text = inputVolBatch1.text!
                 abvBatch1.text = inputABVBatch1.text!
@@ -71,6 +73,7 @@ class VolumeFromWeight: UIViewController {
                 errorLabel.text = "Please enter values for each field"
                 
             }else{
+                errorLabel.text = ""
                 //calculate 2 and lower!
                 volBatch1.text = inputVolBatch1.text!
                 abvBatch1.text = inputABVBatch1.text!
@@ -86,14 +89,14 @@ class VolumeFromWeight: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        volBatch1.text = "0";
-        abvBatch1.text = "0";
-        volbatch2.text = "0";
-        abvBatch2.text = "0";
-        volBatch3.text = "0";
-        abvBatch3.text = "0";
-        volBatch4.text = "0";
-        abvBatch4.text = "0";
+        volBatch1.text = "0"
+        abvBatch1.text = "0"
+        volbatch2.text = "0"
+        abvBatch2.text = "0"
+        volBatch3.text = "0"
+        abvBatch3.text = "0"
+        volBatch4.text = "0"
+        abvBatch4.text = "0"
         
         inputVolBatch1.keyboardType = UIKeyboardType.decimalPad
         inputVolBatch1.inputAccessoryView = UIToolbar()
@@ -119,7 +122,7 @@ class VolumeFromWeight: UIViewController {
         inputABVBatch4.keyboardType = UIKeyboardType.decimalPad
         inputABVBatch4.inputAccessoryView = UIToolbar()
         
-        errorLabel.text = "Please enter values for each field"
+        errorLabel.text = ""
     }
 
     override func didReceiveMemoryWarning() {
